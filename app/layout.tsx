@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Moxietree Enterprise Limited — Software engineering consultancy, Wellington NZ",
+  title:
+    "Moxietree Enterprise Limited — Software engineering consultancy, Wellington NZ",
   description:
     "Moxietree is a Wellington-based software engineering consultancy specialising in Java, Spring Boot, enterprise integration, and React for New Zealand's most demanding organisations.",
   openGraph: {

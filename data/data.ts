@@ -4,7 +4,13 @@ export type Service = {
   description: string;
   tags: string[];
   iconClass: string; // svc-api | svc-integration | ...
-  icon: "api" | "integration" | "frontend" | "cloud" | "modernization" | "advisory";
+  icon:
+    | "api"
+    | "integration"
+    | "frontend"
+    | "cloud"
+    | "modernization"
+    | "advisory";
 };
 
 export const services: Service[] = [
@@ -203,19 +209,66 @@ export type Certification = {
 };
 
 export const certifications: Certification[] = [
-  { badge: "AWS", tone: "aws", title: "Certified Developer — Associate", issuer: "Amazon Web Services", date: "2020" },
-  { badge: "AWS", tone: "aws", title: "Cloud Practitioner", issuer: "Amazon Web Services", date: "2020" },
-  { badge: "MS", tone: "mulesoft", title: "MuleSoft Integration & API", issuer: "MuleSoft", date: "2017" },
-  { badge: "IBM", tone: "ibm", title: "IBM Integration Bus V10", issuer: "IBM", date: "2016" },
-  { badge: "IBM", tone: "ibm", title: "WebSphere Process Server V7", issuer: "IBM", date: "2014" },
-  { badge: "☀", tone: "sun", title: "Sun Certified Java SE 5.0", issuer: "Sun Microsystems", date: "2009" },
+  {
+    badge: "AWS",
+    tone: "aws",
+    title: "Certified Developer — Associate",
+    issuer: "Amazon Web Services",
+    date: "2020",
+  },
+  {
+    badge: "AWS",
+    tone: "aws",
+    title: "Cloud Practitioner",
+    issuer: "Amazon Web Services",
+    date: "2020",
+  },
+  {
+    badge: "MS",
+    tone: "mulesoft",
+    title: "MuleSoft Integration & API",
+    issuer: "MuleSoft",
+    date: "2017",
+  },
+  {
+    badge: "IBM",
+    tone: "ibm",
+    title: "IBM Integration Bus V10",
+    issuer: "IBM",
+    date: "2016",
+  },
+  {
+    badge: "IBM",
+    tone: "ibm",
+    title: "WebSphere Process Server V7",
+    issuer: "IBM",
+    date: "2014",
+  },
+  {
+    badge: "☀",
+    tone: "sun",
+    title: "Sun Certified Java SE 5.0",
+    issuer: "Sun Microsystems",
+    date: "2009",
+  },
 ];
 
 export const techStack = [
-  "Java 17+", "Spring Boot", "React", "TypeScript", "RESTful & SOAP APIs",
-  "Apache Kafka", "Apache Camel", "IBM Integration Bus", "Mule ESB",
-  "JPA / Hibernate", "PostgreSQL · Oracle · DB2", "AWS · Azure",
-  "Kubernetes · OpenShift · Docker", "Karate · JUnit · Mockito", "Maven · Gradle",
+  "Java 17+",
+  "Spring Boot",
+  "React",
+  "TypeScript",
+  "RESTful & SOAP APIs",
+  "Apache Kafka",
+  "Apache Camel",
+  "IBM Integration Bus",
+  "Mule ESB",
+  "JPA / Hibernate",
+  "PostgreSQL · Oracle · DB2",
+  "AWS · Azure",
+  "Kubernetes · OpenShift · Docker",
+  "Karate · JUnit · Mockito",
+  "Maven · Gradle",
 ];
 
 export const contact = {

@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 
 const RevealOnScroll = () => {
-    useEffect(() => {
+  useEffect(() => {
     const io = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -13,15 +13,15 @@ const RevealOnScroll = () => {
           }
         });
       },
-      { threshold: 0.08, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0.08, rootMargin: "0px 0px -40px 0px" },
     );
 
     document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
 
     return () => io.disconnect();
   }, []);
-  
+
   return null;
-}
+};
 
 export default RevealOnScroll;
